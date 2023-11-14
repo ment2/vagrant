@@ -1,29 +1,50 @@
-Kernel updates & create centos8-kernel6 Vagrant box
+### Kernel updates & create centos8-kernel6 Vagrant box
 
-------------------------------------Kernel updates
-Версия ДО
+
+#### ------------------------------------Kernel updates-------------------
+
+##### Версия ДО
+
 [vagrant@kernel-update ~]$ uname -r
+
 4.18.0-519.el8.x86_64
-Версия ПОСЛЕ
+
+#### Версия ПОСЛЕ
+
 [vagrant@kernel-update ~]$ uname -r
+
 6.6.1-1.el8.elrepo.x86_64
 
 
------------------------------create centos8-kernel6 Vagrant box
-Добавлен новый созданный бокс
+#### -----------------------------create centos8-kernel6 Vagrant box--------------------
+
+##### Добавлен новый созданный бокс
+
 user@Ubuntu:/media/sf_/test_vm/packer$ vagrant box list
+
 centos8-kernel6  (virtualbox, 0)
+
 generic/centos8s (virtualbox, 4.3.6)
 
-Иницилизация (создание файла конфигурации)
+
+##### Иницилизация (создание файла конфигурации)
+
 user@Ubuntu:/media/sf_/test_vm/packer$ vagrant init centos8-kernel6
+
 A `Vagrantfile` has been placed in this directory. You are now
+
 ready to `vagrant up` your first virtual environment! Please read
+
 the comments in the Vagrantfile as well as documentation on
+
 `vagrantup.com` for more information on using Vagrant.
 
-Загрузка готового бокса из облака
+
+
+##### Загрузка готового бокса из облака
+
 vagrant up
+
 Bringing machine 'default' up with 'virtualbox' provider...
 ==> default: Box 'wlad124650/centos8-kernel6' could not be found. Attempting to find and install...
     default: Box Provider: virtualbox
